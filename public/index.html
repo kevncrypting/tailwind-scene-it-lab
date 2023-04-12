@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,32 @@
     <link rel="stylesheet" href="styles.css">
     <title>Scene It</title>
 </head>
-<body>
-    <header>
-        <h1 class="text-3xl">Scene It</h1>
+
+<body class="bg-blue-400">
+    <header class="flex flex-col items-center py-4">
+        <h1 class="text-5xl text-red-500 font-bold">Scene It</h1>
     </header>
     <main>
+        <!-- Search Area -->
+        <section class="flex flex-col items-center pb-4 gap-1">
+            <p>Search for movies you want to watch.</p>
+            <p>Save them to your list.</p>
+            <!-- Search Bar -->
+            <form id="search-form" class="flex bg-slate-200 p-3 rounded-lg gap-3 w-auto">
+                <input id="search-input" type="text" placeholder="Search for a movie..." class="p-3 rounded-lg md:">
+                <button type="submit" class="bg-slate-400 p-3 rounded-lg hover:bg-gray-700 hover:text-white">Search</button>
+            </form>
+        </section>
+        <!-- Movie Results -->
+        <div id="movies-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-center justify-items-center gap-2 p-5">
 
+        </div>
     </main>
     <footer>
 
     </footer>
+    <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
